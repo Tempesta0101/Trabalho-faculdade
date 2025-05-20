@@ -55,6 +55,11 @@ nav .nav-links {
     gap: 25px;
 }
 
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
 
 .dropdown {
     position: relative;
