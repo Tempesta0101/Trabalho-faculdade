@@ -119,8 +119,10 @@ nav .logo {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f0f0;
-    padding-top: 100px; 
+    padding-top: 100px;
+    background-image: url ("./img/banner-produto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .produto {
@@ -140,19 +142,7 @@ nav .logo {
     height: 100%;
     object-fit: fill;
     border-radius: 15px;
-}
-.fundo-produto {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: 1;
-    opacity: 0.4; 
-}
-
-
+}   
 footer {
     background-color: #4a004b;
     color: #fff;
