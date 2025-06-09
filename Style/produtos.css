@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  height: calc(100vh - 150px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/banner-produto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.96;
+  z-index: 0;
+}
+
+.container > * {
+  position: relative;
+  z-index: 1;
+}
+
+.container img {
+  border-radius: 20px;
+  margin-top: 160px;
+  width: 750px;
+  height: 800px;
+}
