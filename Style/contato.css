@@ -1,4 +1,8 @@
 .banner-principal {
+  background-image: url("../img/banner-produto.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: calc(100vh - 150px);
   display: flex;
   justify-content: center;
@@ -7,7 +11,23 @@
 }
 
 .banner-principal img {
+  border-radius: 20px;
   margin-top: 160px;
-  width: 100%;
-  height: 100%;
+  max-width: 1440px;
+}
+
+@media (max-width: 1440px) {
+  .banner-principal img {
+    width: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .banner-principal img {
+    width: 720px;
+  }
+}
+@media (max-width: 720px) {
+  .banner-principal img {
+    width: 500px;
+  }
 }
