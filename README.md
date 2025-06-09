@@ -1,10 +1,8 @@
 # Açaí Espacial
 
-![Preview](../img/preview.png)
+<img src="/preview.png" alt="Imagem do site" width="500px"/> 
 
 > Consiste em um site mostrando um pouco sobre a loja Açaí Espacial e mostrando seus deliciosos produtos. "O sabor que você precisa, a consistência que você deseja!"
-
-![Demonstração do Site](linkdosite)
 
 ---
 
