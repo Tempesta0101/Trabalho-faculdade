@@ -1,29 +1,32 @@
+/* Reset e base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  color: #ffffff;
+  color: #fff;
 }
 
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #ffffff #4a004b;
+  scrollbar-color: #fff #4a004b;
 }
 
+/* Header */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 150px;
-  background-color: #4a004b;
+  background: #4a004b;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   border-radius: 0 0 20px 20px;
-  color: #ffffff;
+  color: #fff;
   padding: 0 20px;
   z-index: 5;
+  transition: height 0.3s, padding 0.3s;
 }
 
 header nav {
@@ -43,15 +46,14 @@ header nav ul {
 header nav ul a {
   text-decoration: none;
   font-size: 24px;
+  transition: color 0.3s;
 }
 
 header nav ul a:hover {
   color: #ffcc00;
-  transition: color 0.3s ease;
 }
 
-/* dropdown */
-
+/* Dropdown */
 header nav ul li.dropdown {
   position: relative;
   display: flex;
@@ -65,7 +67,7 @@ header nav ul li.dropdown .dropdown-content {
   top: 100%;
   left: 0;
   min-width: 220px;
-  background-color: #4a004b;
+  background: #4a004b;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   padding: 10px 0;
   border-radius: 0 0 8px 8px;
@@ -84,27 +86,28 @@ header nav ul li.dropdown .dropdown-content a {
   color: #fff;
   text-decoration: none;
   font-size: 20px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 header nav ul li.dropdown .dropdown-content a:hover {
-  background-color: #4a004b;
-  border-right: #ffcc00 5px solid;
+  background: #4a004b;
+  border-right: 5px solid #ffcc00;
   color: #ffcc00;
   transform: translateX(5px);
 }
 
-/* Fim dropdown */
+/* Footer */
 footer {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 150px;
-  background-color: #4a004b;
-  color: #ffffff;
+  background: #4a004b;
+  color: #fff;
+  position: relative;
 }
 
 footer .footer-container {
@@ -123,53 +126,106 @@ footer a {
   padding: 10px;
   font-size: 20px;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 footer a:hover {
   color: #ffcc00;
-  transition: color 0.3s ease;
 }
+
+/* Responsividade */
 @media (max-width: 1440px) {
   header nav {
     gap: 60px;
   }
-
   header nav ul {
     gap: 24px;
   }
-
   header {
     height: 120px;
     padding: 0 10px;
   }
+  footer {
+    height: 120px;
+  }
 }
+
 @media (max-width: 1024px) {
   header nav {
     gap: 30px;
   }
-
   header nav ul {
     gap: 20px;
   }
-
   header {
     height: 100px;
-    padding: 0 10px;
+  }
+  footer {
+    height: 100px;
   }
 }
+
 @media (max-width: 720px) {
   header nav {
     flex-direction: column;
     gap: 20px;
   }
-
   header nav ul {
     flex-direction: column;
     gap: 10px;
   }
-
   header {
     height: auto;
     padding: 10px;
+  }
+  footer {
+    height: auto;
+    padding: 20px 0;
+  }
+  footer .footer-container {
+    gap: 10px;
+  }
+  footer p,
+  footer a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 5px;
+    border-radius: 0 0 10px 10px;
+  }
+  header nav ul a {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  header nav ul li.dropdown .dropdown-content a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  footer {
+    padding: 10px 0;
+  }
+  footer .footer-container {
+    gap: 6px;
+  }
+  footer p,
+  footer a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 360px) {
+  header nav ul a {
+    font-size: 16px;
+  }
+  header nav ul li.dropdown .dropdown-content a {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  footer p,
+  footer a {
+    font-size: 12px;
   }
 }
