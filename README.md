@@ -24,14 +24,14 @@ Siga os passos abaixo para clonar:
 
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/Tempesta0101/Trabalho-faculdade
 
 ```
 
 ### 2. Acesse a pasta do projeto
 
 ```bash
-cd seu-repositorio
+cd Trabalho-faculdade
 ```
 
 ### 3. Agora so utilizar
